@@ -38,6 +38,8 @@ read -p "Enter url: " url
 read -p "Enter net_name: " net_name
 read -p "Enter name: " name
 
+net_name=${net_name:-eth0}
+
 # Create the client.json file with the provided parameters
 cat > /etc/ak_monitor/client.json <<EOF
 {
