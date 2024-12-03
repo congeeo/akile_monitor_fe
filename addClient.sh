@@ -49,4 +49,5 @@ cat > /etc/ak_monitor/client.json <<EOF
 EOF
 
 # Enable and start the systemd service
+systemctl daemon-reload
 systemctl enable --now ak_client.service
